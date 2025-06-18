@@ -2781,7 +2781,7 @@ font-size: 16px;
   
 .blue-container{
   padding-bottom: 2rem;
-  max-height: 520px;
+  max-height: 600px;
 }
 
 .anerix_logo{
@@ -2794,7 +2794,8 @@ font-size: 16px;
 }
 
 .container_text h1{
-  font-size: 40px;
+  font-size: 42px;
+  line-height: 1.5;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 80px;
@@ -2870,7 +2871,7 @@ font-size: 16px;
 }
 
 .step_container_middle {
-  max-width: 160px;
+  max-width: 180px;
   max-height: 140px;
 }
 
@@ -2879,7 +2880,8 @@ line-height: 1;
 }
 
 .step_container_middle .highlight {
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .text_middle_secondary {
@@ -2891,7 +2893,7 @@ line-height: 1;
 }
 
 .step_description p {
-  font-size:14px;
+  font-size:15px;
 }
 
 /* Mobile Version  */
@@ -2995,7 +2997,7 @@ line-height: 1;
 }
 
 .intro-subtitle {
-  font-size: 14px;
+  font-size: 15px;
 } 
 
  .btn--secondary{ 
@@ -3004,15 +3006,15 @@ line-height: 1;
   border-radius: 18px;
 }
 
-  h1 { font-size: 14px; }
-  h2 { font-size: 1.3rem; }
+  h1 { font-size: 18px; }
+  h2 { font-size: 1.8rem; }
 
   .benefit-card h3 {
-    font-size: 14px;
+    font-size: 16px;
 }
 
   .benefit-card p {
-    font-size: 12px;
+    font-size: 14px;
 }
 .benefit-card {
   padding: 10px 10px;
@@ -3029,6 +3031,7 @@ line-height: 1;
 
 .package-card p {
   font-size: 14px;
+  font-weight: 300;
 }
 
 .package-card .price {
@@ -3064,7 +3067,7 @@ line-height: 1;
 }
 
 .testimonial-text {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .testimonial-author {
@@ -3091,7 +3094,7 @@ line-height: 1;
 
 
 .faq-section .subheading {
-  font-size: 14px;
+  font-size: 15px;
 }
 .faq-question .faq-toggle {
   width: 30px;
@@ -3120,7 +3123,8 @@ padding-right: 10px;
 }
 
 .contact-subtitle {
-  font-size: 14px;
+  font-size: 15px;
+  padding-top: 20px;
 }
 
 .contact-form {
@@ -3130,7 +3134,7 @@ padding-right: 10px;
 }
 
 .contact-form .form-title {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 10px;
   text-align: center;
 }
@@ -3140,14 +3144,17 @@ padding-right: 10px;
 }
 
 .contact-info .info-text {
-  font-size: 12px;
+  font-size: 14px;
+  padding-bottom: 40px;
 } 
+
 .thank-title {
   font-size: 22px;
 }
 
 .info-label {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .footer-inner{
@@ -3188,8 +3195,9 @@ padding-right: 10px;
 }
 
 .contact-info .info-title{
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   text-align: center;
+  padding-top: 40px;
 }
 
 .contact-info .info-list {
@@ -3202,7 +3210,7 @@ padding-right: 10px;
 }
 
 .social_links_label {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .contact-info .social-footer {
@@ -3216,11 +3224,16 @@ padding-right: 10px;
 }
 
 .info-detail {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .final-cta__subtitle {
+  font-size: 15px;
+}
+
+.final-cta__inner .btn--secondary{
   font-size: 14px;
+  padding: 10px 14px;
 }
 
 .footer-bottom {
@@ -3317,7 +3330,7 @@ padding-right: 10px;
   
 .blue-container{
   padding-bottom: 2rem;
-  max-height: 520px;
+  max-height: 600px;
   max-width: 100%;
 }
 
@@ -3331,8 +3344,8 @@ padding-right: 10px;
 }
 
 .container_text h1{
-  font-size: 38px;
-  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
   margin-top: 100px;
   margin-bottom: 80px;
 }
@@ -3486,6 +3499,7 @@ line-height: 1;
 
 .package-card p {
   font-size: 14.5px;
+  font-weight: 300;
   padding-bottom: 1rem;
 }
 
