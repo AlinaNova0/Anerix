@@ -7,6 +7,49 @@
 /*  font-family: "Open Sans", sans-serif; */
 /* font-family: "Montserrat", sans-serif; */
 
+/* Flexbox с префиксами */
+.header,
+.header_container,
+.welcome_blue_container {
+  display: -webkit-box;      /* Safari 6-, iOS 6- */
+  display: -ms-flexbox;      /* IE10 */
+  display: -webkit-flex;     /* Chrome/Flexbox устаревший */
+  display: flex;             /* Современные браузеры */
+
+  -webkit-flex-direction: row;
+     -ms-flex-direction: row;
+         flex-direction: row;
+
+  -webkit-justify-content: space-between;
+     -ms-flex-pack: justify;
+         justify-content: space-between;
+
+  -webkit-align-items: center;
+     -ms-flex-align: center;
+         align-items: center;
+}
+
+/* Переходы */
+#mobileMenu a,
+.btn,
+.header_nav a {
+  -webkit-transition: background-color 0.2s ease, font-weight 0.2s ease;
+     -moz-transition: background-color 0.2s ease, font-weight 0.2s ease;
+       -o-transition: background-color 0.2s ease, font-weight 0.2s ease;
+          transition: background-color 0.2s ease, font-weight 0.2s ease;
+}
+
+.blue-container {
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  /* если есть box-shadow: */
+  -webkit-box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+     -moz-box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+          box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -42,6 +85,7 @@ max-width: 1336px;
 padding-bottom: 3rem;
 }
 
+
 h1{
     font-size: 40px;
     font-weight: 400;
@@ -58,6 +102,14 @@ h2{
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+
+
+
+
+
+
+
 
 .header {
     font-family: "Montserrat", sans-serif;
@@ -127,11 +179,18 @@ text-decoration: none;
   position: relative;
     margin: 0 auto;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
     background: transparent;
     min-height: 50rem;
     align-items: stretch;
+    overflow: hidden;  
+    /* background: linear-gradient(to bottom, #003366, #0066cc, #ffffff); */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    /* background: linear-gradient(to bottom, #00127e, #0066cc, #ffffff); */
+    background: linear-gradient(to bottom, #00197e, #0066cc, #ffffff);
 }
+
+
 
 .welcome_bg {
   position: absolute;
@@ -171,7 +230,7 @@ z-index: 1;
 
 .container_text h1{
     max-width: 600px;
-    font-size: 65px;           
+    font-size: 69px;           
     font-weight: 450;          
     font-family: "Open Sans", sans-serif;
     letter-spacing: -0.05em;
@@ -358,7 +417,7 @@ filter: blur(90px);
     transform: translate(-50%, -50%);
     padding: 10px 20px;
     /* background:#0046af; */
-    background:#0957cb;
+    background:#0066cc;
     color: #ffffff;
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
@@ -728,7 +787,7 @@ filter: blur(90px);
   font-size: 16px;
   color: rgb(51, 51, 51);
   line-height: 1.5;
-  font-weight: 200;
+  font-weight: 400;
   
 }
 
@@ -1971,7 +2030,7 @@ flex-wrap: nowrap;
 }
 
 .anerix_logo {
-  bottom: 0px;
+  bottom: -18px;
 }
 
   h1 { font-size: 16px; }
@@ -2083,7 +2142,7 @@ flex-wrap: nowrap;
 }
 
 .anerix_logo {
-  bottom: 0px;
+  bottom: -16px;
 }
 
 .cta-buttons {
@@ -2230,8 +2289,13 @@ font-size: 18px;
     font-size: 12px;
     max-width: 320px;
   }
+
+  .anerix_logo img {
+    max-width: 120px;
+}
+
   .anerix_logo {
-    bottom: 0px;
+    bottom: -20px;
   }
   
   .br_welcome {
@@ -2343,7 +2407,8 @@ font-size: 18px;
   .btn--secondary {
     font-size: 14.5px;
     margin: 20px 30px;
-    border-radius: 18px;
+    border-radius: 30px;
+    padding: 20px 30px;
   }
 
   h1 {
@@ -2497,14 +2562,14 @@ font-size: 18px;
   font-size: 12px;
 }
 .anerix_logo{
-  bottom: 0px;
+  bottom: -35px;
 }
 .anerix_logo img {
   max-width: 100px;
 }
 
 .example_container h1 {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .trigger-oval {
@@ -2559,12 +2624,13 @@ font-size: 18px;
 
  .btn--secondary{ 
   font-size: 14px;
-  margin: 15px 30px;
-  border-radius: 18px;
+  margin: 30px 60px;
+  border-radius: 30px;
+  
 }
 
-  h1 { font-size: 16px; }
-  h2 { font-size: 1.5rem; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 1.8rem; }
 
   .benefit-card h3 {
     font-size: 16px;
@@ -2582,7 +2648,7 @@ font-size: 18px;
   min-height: fit-content;
 }
 .package-card h2 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 .package-card .price-amount {
@@ -2630,6 +2696,10 @@ font-size: 16px;
   margin: 0 auto;
   padding: 10px;
 }
+
+.contact-header h2{
+  padding-bottom: 20px;
+  }
 
 .contact-form .form-title {
   font-size: 18px;
@@ -2683,8 +2753,9 @@ font-size: 16px;
 }
 
 .contact-info .info-title{
-  font-size: 1.3rem;
-  text-align: center;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 40px;
 }
 
 .contact-info .info-list {
@@ -2696,6 +2767,7 @@ font-size: 16px;
   text-align: center;
   max-width: 360px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .info-detail {
@@ -2797,7 +2869,7 @@ font-size: 16px;
   font-size: 50px;
   /* line-height: 1.5; */
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -2873,7 +2945,7 @@ font-size: 16px;
 }
 
 .step_container_middle {
-  max-width: 180px;
+  max-width: 200px;
   max-height: 140px;
 }
 
@@ -3033,7 +3105,7 @@ line-height: 1;
 
 .package-card p {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .package-card .price {
@@ -3345,9 +3417,9 @@ padding-right: 10px;
 }
 
 .container_text h1{
-  font-size: 46px;
+  font-size: 50px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -3417,7 +3489,7 @@ width: 5px;
 }
 
 .step_container_middle {
-  max-width: 160px;
+  max-width: 200px;
   max-height: 140px;
 }
 
@@ -3501,7 +3573,7 @@ line-height: 1;
 
 .package-card p {
   font-size: 14.5px;
-  font-weight: 300;
+  font-weight: 400;
   padding-bottom: 1rem;
 }
 
