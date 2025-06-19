@@ -2780,17 +2780,8 @@ font-size: 16px;
     }
   
 .blue-container{
-  position: relative;
   padding-bottom: 2rem;
-  height: 100vh; 
-  overflow: hidden;
-}
-.blue-container .welcome_bg {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  
+  max-height: 600px;
 }
 
 .anerix_logo{
@@ -3937,5 +3928,35 @@ html, body {
     display: flex !important;
   }
 }
+
+/* === для устройств шириной до 500px === */
+@media (max-width: 500px) {
+  .blue-container {
+    height: 100vh !important;
+    overflow: hidden;
+  }
+  .blue-container .welcome_bg {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    /* при необходимости скорректировать положение: */
+    object-position: center top !important;
+  }
+}
+
+/* === для устройств шириной до 400px === */
+@media (max-width: 400px) {
+  .blue-container {
+    height: 100vh !important;
+  }
+  .blue-container .welcome_bg {
+    /* может понадобиться чуть сдвинуть фон повыше/пониже: */
+    object-position: center 20% !important;
+  }
+}
+
 
 
