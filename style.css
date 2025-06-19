@@ -2765,10 +2765,10 @@ font-size: 16px;
 
     /* Сделать картинку первой в потоке и дать отступ снизу */
     .welcome_blue_container .features_image {
-      order: -1;
+      /* order: -1; */
       width: 100%;
-      max-width: 200px;
-      padding-top: 30px;
+      max-width: 240px;
+      padding-top: 10px;
       padding-bottom: 30px;
     }
   
@@ -2794,17 +2794,19 @@ font-size: 16px;
 }
 
 .container_text h1{
-  font-size: 42px;
-  line-height: 1.5;
+  font-size: 50px;
+  /* line-height: 1.5; */
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+
 }
 
 .blue-container .subheading {
-  display: none;
-  font-size: 12px;
-  max-width: 300px;
+  display: block;
+  font-size: 14px;
+  max-width: 380px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -2815,7 +2817,7 @@ font-size: 16px;
 }
 
 .features_image {
-  display: none !important;
+  display: block;
 }
 
 .br_welcome{
@@ -3314,10 +3316,9 @@ padding-right: 10px;
   
     /* Сделать картинку первой в потоке и дать отступ снизу */
     .welcome_blue_container .features_image {
-      order: -1;
       width: 100%;
-      max-width: 200px;
-      padding-top: 30px;
+      max-width: 240px;
+      padding-top: 10px;
       padding-bottom: 30px;
     }
   
@@ -3344,16 +3345,17 @@ padding-right: 10px;
 }
 
 .container_text h1{
-  font-size: 40px;
-  line-height: 1.5;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  font-size: 46px;
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
 .blue-container .subheading {
-  font-size: 12px;
-  max-width: 300px;
+  font-size: 14px;
+  max-width: 380px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -3364,7 +3366,7 @@ padding-right: 10px;
 }
 
 .features_image {
-  display: none !important;
+  display: block;
 }
 
 .br_welcome{
