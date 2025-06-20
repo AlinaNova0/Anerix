@@ -1866,6 +1866,7 @@ opacity: 0.9;
 }
 .footer-links__list a:hover {
 opacity: 1;
+text-decoration: underline;
 }
 
 /* Социальные иконки */
