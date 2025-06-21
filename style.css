@@ -1306,6 +1306,17 @@ width: 16px;
 height: 16px;
 }
 
+.privacy-link {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.privacy-link:hover {
+  color: #0066ff;
+  text-decoration: none;
+}
+
 .contact-form .btn--primary {
 background: linear-gradient(to bottom, #003366, #0066cc);
 color: #fff;
