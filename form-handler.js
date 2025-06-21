@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     try {
       // 3) Шлём на Make
       const response = await fetch(
-        "https://hook.us2.make.com/musj10nhspufne98f4utr48panhqn89m",
+        "https://hook.us2.make.com/8me3a5xbrk6b3bay0u39h0ssbllh8ome",
         {
           method: "POST",
           body: formData,
