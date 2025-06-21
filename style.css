@@ -1308,7 +1308,7 @@ height: 16px;
 
 .privacy-link {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom: 1px dashed transparent;
   transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
@@ -1316,6 +1316,7 @@ height: 16px;
 .privacy-link:hover {
   color: #0066cc; 
   border-bottom-color: #0066cc;
+  text-decoration: underline !important;
   cursor: pointer;
 }
 
