@@ -1308,13 +1308,15 @@ height: 16px;
 
 .privacy-link {
   color: inherit;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 .privacy-link:hover {
-  color: #0066ff;
-  text-decoration: none;
+  color: #0066cc; 
+  border-bottom-color: #0066cc;
+  cursor: pointer;
 }
 
 .contact-form .btn--primary {
